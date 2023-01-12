@@ -10,7 +10,8 @@ public class Main {
 
         firma.wyswietlPodsumowanie();
 
-        Firma janNowakServices = new Firma("Jan Nowak IT Services", new RyczaltEwidencjonowany());
+        Firma janNowakServices = new Firma("Jan Nowak IT Services",
+                new RyczaltEwidencjonowany());
 
         janNowakServices.dodajPrzychod("Programowanie", 15_000);
         janNowakServices.dodajWydatek("Energetyki", 200);
