@@ -22,19 +22,14 @@ public class Firma {
         System.out.printf("Forma opodatkowania: %s\n", formaOpodatkowania.getClass().getSimpleName());
         System.out.printf("Suma przychodów: %.2f zł\n", sumaPrzychodow);
         System.out.printf("Suma wydatków: %.2f zł\n", sumaWydatkow);
-        if (formaOpodatkowania instanceof PodatekLiniowy) {
-            System.out.printf("Podatek do zapłacenia: %.2f zł",
-                    ((PodatekLiniowy) formaOpodatkowania).wyliczPodatek(sumaPrzychodow, sumaWydatkow));
-        } else {
-            System.out.printf("Podatek do zapłacenia: %.2f zł",
-                    formaOpodatkowania.wyliczPodatek(sumaPrzychodow));
-        }
+        System.out.printf("Podatek do zapłacenia: %.2f zł",
+                 formaOpodatkowania.wyliczPodatek(sumaPrzychodow, sumaWydatkow));
         System.out.print("\n\n");
     }
 
     private double zsumujWydatki() {
         double sumaWydatkow = 0;
-        for (Wydatki wydatek : this.wydatki) {
+        for (Wydatki wydatek : wydatki) {
             sumaWydatkow = sumaWydatkow + wydatek.getWartosc();
         }
         return sumaWydatkow;
