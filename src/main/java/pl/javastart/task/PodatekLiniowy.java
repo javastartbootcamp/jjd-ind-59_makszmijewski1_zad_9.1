@@ -7,4 +7,9 @@ public class PodatekLiniowy extends FormaOpodatkowania {
         double zysk = przychody - wydatki;
         return zysk * OPROCENTOWANIE_PODATEK_LINIOWY;
     }
+
+    @Override
+    String getName() {
+        return "Podatek liniowy";
+    }
 }

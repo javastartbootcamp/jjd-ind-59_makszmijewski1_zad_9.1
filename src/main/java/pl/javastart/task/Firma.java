@@ -19,7 +19,7 @@ public class Firma {
         double sumaPrzychodow = zsumujPrzychody();
         double sumaWydatkow = zsumujWydatki();
         System.out.printf("======= Firma: %s ===========\n", nazwa);
-        System.out.printf("Forma opodatkowania: %s\n", formaOpodatkowania.getClass().getSimpleName());
+        System.out.printf("Forma opodatkowania: %s\n", formaOpodatkowania.getName());
         System.out.printf("Suma przychodów: %.2f zł\n", sumaPrzychodow);
         System.out.printf("Suma wydatków: %.2f zł\n", sumaWydatkow);
         System.out.printf("Podatek do zapłacenia: %.2f zł",

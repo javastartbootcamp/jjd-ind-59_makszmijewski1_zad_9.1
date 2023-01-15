@@ -17,4 +17,9 @@ public class SkalaPodatkowa extends FormaOpodatkowania {
                     + (zysk - KWOTA_WOLNA_OD_PODATKU) * PROCENT_PIERWSZY_PROG_PODATKOWY;
         }
     }
+
+    @Override
+    String getName() {
+        return "Skala podatkowa";
+    }
 }
